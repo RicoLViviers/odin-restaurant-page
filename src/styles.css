@@ -1,4 +1,26 @@
+:root
+{
+    --color-primary-text: #f8f8f8;
+}
+
 /* styles.css */
 body {
-  background-color: rebeccapurple;
+  background-color: #16181a;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button 
+{
+    background-color: #22272c;
+    color: var(--color-primary-text);
+    border: 1px solid #2d3136;
+    border-radius: 8px;
+    width: 7vw;
+    height: 5vh;
 }
