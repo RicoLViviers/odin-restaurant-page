@@ -251,3 +251,118 @@ nav button.active
 #menu > .menu-category:first-of-type {
     margin-top: 2rem;
 }
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    margin: 10vh 5vw;
+    color: #F5F5F5;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 700px;
+    text-align: center;
+}
+
+.contact-eyebrow {
+    margin: 0;
+    color: #fcb144;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.contact-header h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.contact-header > p:last-child {
+    margin: 0;
+    color: #a0a0a0;
+    line-height: 1.7;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 700px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border: 1px solid #2d3136;
+    border-radius: 10px;
+    background-color: #111111;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.9rem 1rem;
+    border: 1px solid #2d3136;
+    border-radius: 6px;
+    outline: none;
+    background-color: #1a1a1a;
+    color: #F5F5F5;
+    font: inherit;
+    font-size: 0.9rem;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777777;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #fcb144;
+    box-shadow: 0 0 0 3px rgb(252 177 68 / 12%);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    padding: 0.9rem 1.5rem;
+    border: 1px solid #fcb144;
+    border-radius: 6px;
+    background-color: #fcb144;
+    color: #0c0c0c;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e9a035;
+    transform: translateY(-2px);
+}
